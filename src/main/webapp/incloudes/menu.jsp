@@ -1,47 +1,17 @@
-<%@ page import="weblogic.security.spi.WLSGroup" %>
-<%@ page import="weblogic.security.spi.WLSUser" %>
-<%@ page import="javax.security.auth.Subject" %>
-<%@ page import="java.security.Principal" %>
 <%@ page import="java.util.Date" %>
-<%--
-    Document   : menu
-    Author     : a.amanzhol
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<script type="text/javascript">
-    myuser = "<%=request.getRemoteUser()%>";
-    roles = [];
-    <%
-
-        Subject subject = weblogic.security.Security.getCurrentSubject();
-        for(Principal p: subject.getPrincipals()) {
-              if(p instanceof WLSGroup) {
-                  %>
-    var role = '<%=p.getName() %>';
-    roles.push(role);
-    <%
-} else if (p instanceof WLSUser) {
-    %>
-    myuser = '<%=p.getName() %>';
-    <%
-}
-}
-%>
-    console.log("roles", roles)
-
-
-</script>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>menu</title>
-    <script src="/aoz/plugin/bootstrap-3.3.4-dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <link href="/aoz/plugin/bootswatch-gh-pages/cerulean/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="/aoz/plugin/bootstrap-3.3.4-dist/css/bootstrap-menu.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/js/password.js?version=<%= new Date()%>" type="text/javascript"></script>
-    <link href="/aoz/css/main.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/plugin/bootstrap-3.3.4-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="${contextPath}/plugin/bootswatch-gh-pages/cerulean/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="${contextPath}/plugin/bootstrap-3.3.4-dist/css/bootstrap-menu.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/js/password.js?version=<%= new Date()%>" type="text/javascript"></script>
+    <link href="${contextPath}/css/main.css" rel="stylesheet" type="text/css"/>
     <script>
         function logout() {
             $.post("/diplom/auth", function () {
@@ -68,17 +38,17 @@
             <% if (request.isUserInRole("admin_role")) { %>
             <ul class="nav navbar-nav">
 
-                <li><a href="/aoz"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="${contextPath}"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <span>Администрирование</span><span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu" id="mapZhournals">
-                        <li><a href="/aoz/pages/admin/users.jsp">Пользователи</a></li>
-                        <li><a href="/aoz/pages/admin/emailattrs.jsp">Параметры почты</a></li>
+                        <li><a href="${contextPath}/pages/admin/users.jsp">Пользователи</a></li>
+                        <li><a href="${contextPath}/pages/admin/emailattrs.jsp">Параметры почты</a></li>
                     </ul>
                 </li>
 
-                <li><a href="/aoz/pages/admin/import.jsp">Импорт</a></li>
+                <li><a href="${contextPath}/pages/admin/import.jsp">Импорт</a></li>
 
             </ul>
 
@@ -88,9 +58,9 @@
                         Справочники&nbsp;<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu pull-right" style="max-height: 407px;">
-                        <li><a href="/aoz/pages/admin/importov.jsp">Справочник товаров</a></li>
-                        <li><a href="/aoz/pages/admin/unit.jsp">Справочник ед. измерении</a></li>
-                        <li><a href="/aoz/pages/admin/providers.jsp">Справочник Поставщиков</a></li>
+                        <li><a href="${contextPath}/pages/admin/importov.jsp">Справочник товаров</a></li>
+                        <li><a href="${contextPath}/pages/admin/unit.jsp">Справочник ед. измерении</a></li>
+                        <li><a href="${contextPath}/pages/admin/providers.jsp">Справочник Поставщиков</a></li>
                     </ul>
                 </li>
             </ul>

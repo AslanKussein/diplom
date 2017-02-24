@@ -6,10 +6,11 @@ import kz.diplom.session.UserSession;
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.SecurityContext;
 
 import static kz.diplom.util.Util.objectToJson;
@@ -17,10 +18,6 @@ import static kz.diplom.util.Util.objectToJson;
 @Stateless
 @Path("user")
 public class UserResource {
-
-    @Context
-    private HttpServletRequest request;
-
 
     @EJB
     UserSession userSession;
@@ -48,14 +45,4 @@ public class UserResource {
     public String getGroupMembersByUName(@QueryParam("uName") String uName) {
         return objectToJson(userSession.getGroupMembersByUName(uName));
     }
-
-
-    @POST
-    @Produces("application/json")
-    @Path("editUser")
-    @Consumes("application/x-www-form-urlencoded")
-    public String editUser(MultivaluedMap<String, String> formParams) {
-        return objectToJson(userSession.editUser(formParams));
-    }
-
 }

@@ -1,8 +1,9 @@
 package kz.diplom.wrapper;
 
-import kz.diplom.entity.*;
+import kz.diplom.entity.Groupmembers;
+import kz.diplom.entity.UserDetail;
+import kz.diplom.entity.Users;
 import kz.diplom.gson.GsonGroupmembers;
-import kz.diplom.gson.GsonGroups;
 import kz.diplom.gson.GsonUserDetail;
 import kz.diplom.gson.GsonUsers;
 
@@ -37,7 +38,6 @@ public class Wrapper {
             gson.setLastname(user.getLastname());
             gson.setMiddlename(user.getMiddlename());
             gson.setEmail(user.getEmail());
-            gson.setLocked(user.getLocked());
             return gson;
         }
         return null;
@@ -51,7 +51,6 @@ public class Wrapper {
             userDetail.setLastname(gson.getLastname());
             userDetail.setMiddlename(gson.getMiddlename());
             userDetail.setEmail(gson.getEmail());
-            userDetail.setLocked(gson.getLocked() == null ? 0 : gson.getLocked());
             return userDetail;
         }
         return null;
@@ -72,44 +71,6 @@ public class Wrapper {
             GsonGroupmembers gson = new GsonGroupmembers();
             gson.setgMember(g.getGroupmembersPK().getGMember());
             gson.setgName(g.getGroupmembersPK().getGName());
-            return gson;
-        }
-        return null;
-    }
-
-
-    public static List<GsonGroups> wrapToGsonGroupsList(List<Groups> list) {
-        List<GsonGroups> result = new ArrayList<>();
-        for (Groups group : list) {
-            result.add(wrapToGsonGroup(group));
-        }
-        return result;
-    }
-
-    private static GsonGroups wrapToGsonGroup(Groups group) {
-        if (group != null) {
-            GsonGroups gson = new GsonGroups();
-            gson.setGDescription(group.getGDescription());
-            gson.setGName(group.getGName());
-            return gson;
-        }
-        return null;
-    }
-
-
-    public static List<Groupmembers> wrapToGroupmembersList(List<GsonGroupmembers> gsonList, String uName) {
-        List<Groupmembers> result = new ArrayList<>();
-        for (GsonGroupmembers gson : gsonList) {
-            result.add(wrapToGroupmembers(gson, uName));
-        }
-        return result;
-    }
-
-
-    private static Groupmembers wrapToGroupmembers(GsonGroupmembers g, String uName) {
-        if (g != null) {
-            Groupmembers gson = new Groupmembers();
-            gson.setGroupmembersPK(new GroupmembersPK(g.getgName(), uName));
             return gson;
         }
         return null;

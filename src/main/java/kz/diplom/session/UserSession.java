@@ -3,19 +3,19 @@ package kz.diplom.session;
 import kz.diplom.entity.Groupmembers;
 import kz.diplom.entity.UserDetail;
 import kz.diplom.entity.Users;
-import kz.diplom.gson.*;
+import kz.diplom.gson.GsonDatatableData;
+import kz.diplom.gson.GsonGroupmembers;
+import kz.diplom.gson.GsonUsers;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.ws.rs.core.MultivaluedMap;
 import java.util.ArrayList;
 import java.util.List;
 
-import static kz.diplom.util.Util.*;
-import static kz.diplom.wrapper.Serialization.wrapToGsonUserDetailByJsonString;
+import static kz.diplom.util.Util.getSingleResultOrNull;
 import static kz.diplom.wrapper.Wrapper.*;
 
 /**
@@ -82,22 +82,5 @@ public class UserSession {
         }
 
         return result;
-    }
-
-    public GsonResult editUser(MultivaluedMap<String, String> formParams) {
-        GsonUserDetail gsonUserDetail = wrapToGsonUserDetailByJsonString(formParams.getFirst("json"));
-
-        UserDetail userDetail = wrapToGsonUserDetail(gsonUserDetail);
-        em.merge(userDetail);
-
-        Query q = em.createQuery("DELETE FROM Groupmembers g where g.groupmembersPK.gMember  = :gMember")
-                .setParameter("gMember", gsonUserDetail.getuName());
-        q.executeUpdate();
-        List<Groupmembers> list = wrapToGroupmembersList(gsonUserDetail.getRoles(), gsonUserDetail.getuName());
-        for (Groupmembers g : list) {
-            em.persist(g);
-        }
-        em.flush();
-        return getGsonResult(true, null);
     }
 }

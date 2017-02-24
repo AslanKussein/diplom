@@ -60,5 +60,4 @@ public class Groups implements Serializable {
     public void setGDescription(String gDescription) {
         this.gDescription = gDescription;
     }
-
 }

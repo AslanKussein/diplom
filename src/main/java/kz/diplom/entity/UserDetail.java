@@ -39,22 +39,12 @@ public class UserDetail implements Serializable {
     @Size(max = 200)
     @Column(name = "EMAIL")
     private String email;
-    @Column(name = "LOCKED")
-    private Integer locked;
     @Id
     @JoinColumn(name = "U_NAME", referencedColumnName = "U_NAME")
     @OneToOne
     private Users uName;
 
     public UserDetail() {
-    }
-
-    public Integer getLocked() {
-        return locked;
-    }
-
-    public void setLocked(Integer locked) {
-        this.locked = locked;
     }
 
     public String getFirstname() {

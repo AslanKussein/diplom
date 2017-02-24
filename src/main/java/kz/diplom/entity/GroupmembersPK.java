@@ -5,7 +5,6 @@
  */
 package kz.diplom.entity;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;
@@ -14,12 +13,10 @@ import java.io.Serializable;
 
 @Embeddable
 public class GroupmembersPK implements Serializable {
-    @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 200)
     @Column(name = "G_NAME")
     private String gName;
-    @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 200)
     @Column(name = "G_MEMBER")

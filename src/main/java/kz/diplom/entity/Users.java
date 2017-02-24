@@ -5,9 +5,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * Created by kusein-at on 17.11.2016.
- */
 @Entity
 @Table(name = "USERS")
 @XmlRootElement

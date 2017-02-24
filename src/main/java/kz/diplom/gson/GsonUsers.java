@@ -1,6 +1,7 @@
 package kz.diplom.gson;
 
 public class GsonUsers {
+
     private String uName;    
     private String uPassword;
     private String uDescription;

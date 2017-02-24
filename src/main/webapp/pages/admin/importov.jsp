@@ -1,19 +1,21 @@
 <%@ page import="java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Импорт</title>
-    <script src="/aoz/plugin/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <link href="/aoz/css/app.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/js/locale.js" type="text/javascript"></script>
-    <link href="/aoz/plugin/webix/codebase/webix.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/plugin/webix/codebase/webix.js" type="text/javascript"></script>
-    <script src="/aoz/js/importtov.js" type="text/javascript"></script>
-    <script src="/aoz/js/newutils.js?version=<%= new Date()%>" type="text/javascript"></script>
-    <link href="/aoz/plugin/bootstrap-notify/animate.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/plugin/bootstrap-notify/bootstrap-notify.min.js" type="text/javascript"></script>
+    <script src="${contextPath}/plugin/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <link href="${contextPath}/css/app.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/js/locale.js" type="text/javascript"></script>
+    <link href="${contextPath}/plugin/webix/codebase/webix.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/plugin/webix/codebase/webix.js" type="text/javascript"></script>
+    <script src="${contextPath}/js/importtov.js" type="text/javascript"></script>
+    <script src="${contextPath}/js/newutils.js?version=<%= new Date()%>" type="text/javascript"></script>
+    <link href="${contextPath}/plugin/bootstrap-notify/animate.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/plugin/bootstrap-notify/bootstrap-notify.min.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="menu">
@@ -23,7 +25,7 @@
 <div>
     <div class="pagetitle">
         <ul class="breadcrumbs">
-            <li><a href="/aoz/">Главная страница</a></li>
+            <li><a href="${contextPath}/">Главная страница</a></li>
             <li class="current"><a>Импорт кода/товара</a></li>
         </ul>
     </div>

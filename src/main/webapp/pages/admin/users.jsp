@@ -1,6 +1,7 @@
 <%@ page import="java.util.Date" %>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +10,15 @@
     <link rel="icon" type="image/ico" sizes="16x16" href="../../images/favicon.ico">
 
 
-    <script src="/aoz/plugin/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <link href="/aoz/css/app.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/js/locale.js" type="text/javascript"></script>
-    <link href="/aoz/plugin/webix/codebase/webix.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/plugin/webix/codebase/webix.js" type="text/javascript"></script>
-    <link href="/aoz/plugin/bootstrap-notify/animate.css" rel="stylesheet" type="text/css"/>
-    <script src="/aoz/plugin/bootstrap-notify/bootstrap-notify.min.js" type="text/javascript"></script>
-    <script src="/aoz/js/users.js" type="text/javascript"></script>
-    <script src="/aoz/js/newutils.js?version=<%= new Date()%>" type="text/javascript"></script>
+    <script src="${contextPath}/plugin/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <link href="${contextPath}/css/app.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/js/locale.js" type="text/javascript"></script>
+    <link href="${contextPath}/plugin/webix/codebase/webix.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/plugin/webix/codebase/webix.js" type="text/javascript"></script>
+    <link href="${contextPath}/plugin/bootstrap-notify/animate.css" rel="stylesheet" type="text/css"/>
+    <script src="${contextPath}/plugin/bootstrap-notify/bootstrap-notify.min.js" type="text/javascript"></script>
+    <script src="${contextPath}/js/users.js" type="text/javascript"></script>
+    <script src="${contextPath}/js/newutils.js?version=<%= new Date()%>" type="text/javascript"></script>
 </head>
 <body  >
 <div id="menu" >
@@ -35,7 +36,6 @@
     </div>
     <div id="userDetailTablePaging"></div>
 </div>
-
 
 </body>
 </html>
