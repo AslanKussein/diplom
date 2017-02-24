@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27.01.2016, 18:04:26
+    Author     : админ
+*/
+
+.right_area.webix_column > div:nth-child(even) {
+    background-color: #ffffdd;
+}
+
+.right_area.webix_column > div:nth-child(odd) {
+    background-color: #ffffee;
+}
+
+.left_area.webix_column > div:nth-child(even) {
+    background-color: #ffffdd;
+}
+
+.left_area.webix_column > div:nth-child(odd) {
+    background-color: #ffffee;
+}

@@ -1,0 +1,112 @@
+.mainlayout{
+    padding:10px 40px 10px 10px;
+}
+
+.appTable .webix_cell {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.appTable .webix_dd_drag_column, .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header {
+    background: white none repeat scroll 0 0;
+    color: #686868;
+    font-size: 13px;
+}
+
+.appTable .webix_ss_header td {
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.appTable .webix_dtable .webix_ss_vscroll_header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_vscroll_header {
+    border-left: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_body {
+    cursor: pointer;
+}
+
+.reportMask{
+    padding:10px;
+}
+
+.reportMask table tr{
+    height: 40px;
+}
+
+.reportMask table td{
+    padding:5px;
+}
+
+.reportMask input, select{
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.select {    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;     
+    position: relative;
+    display: block;
+    margin-left: 5px;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+}
+
+select{       
+    height: 40px;
+    padding: 5px;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;        
+}
+.select:after {
+    content:"\f078";
+    font-family: FontAwesome;
+    font-size: 11px;
+    font-weight: normal;
+    color: #555;
+    padding: 12px 8px;
+    position: absolute; right: 0; top: 0;    
+    z-index: 1;
+    text-align: center;
+    width: 40px;
+    height: 100%;      
+    pointer-events: none;
+    box-sizing: border-box;   
+}
+
+select{
+    margin-left: 15px;
+}
+
+select{
+    color:red;
+}

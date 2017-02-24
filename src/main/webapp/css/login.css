@@ -1,0 +1,28 @@
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.errmsg {
+    padding: 7px 0 7px 0;
+    color: #dd4b39;
+    text-align: center;
+}
+
+.loadingContainer {
+    text-align: center;
+    display: none;
+    padding-top: 10px;
+}
+
+body {
+    /*background: url("../images/main_fone.png") !important;*/
+    /*background-repeat: repeat-x !important;*/
+    /*background-attachment: fixed !important;*/
+    /*background-position-y: 230px;*/
+    background: url(../images/123.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}

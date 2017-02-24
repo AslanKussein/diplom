@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <session-config>
+        <session-timeout>
+            15
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>pages/index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <!-- Forbidden directory listing -->
+        <error-code>403</error-code>
+        <location>/err403.jsp</location>
+    </error-page>
+    <error-page>
+        <!-- Forbidden directory listing -->
+        <error-code>404</error-code>
+        <location>/err404.jsp</location>
+    </error-page>
+    <login-config>
+        <auth-method>FORM</auth-method>        
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/login.jsp</form-error-page>
+        </form-login-config>
+    </login-config> 
+    <security-role>
+        <role-name>admin_role</role-name>
+    </security-role>
+    <security-constraint>
+        <display-name>Constraint-admin</display-name>
+        <web-resource-collection>
+            <web-resource-name>Constraint-admin</web-resource-name>
+            <url-pattern>/pages/admin/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin_role</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

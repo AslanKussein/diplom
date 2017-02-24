@@ -1,0 +1,637 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Author     :a.amanzhol
+*/
+
+.middlecontent {
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.webix_view {
+    font-size: 14px;
+}
+
+.webix_tree_item {
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.webix_el_button button, .webix_el_button input, .webix_el_toggle button, .webix_el_toggle input, .webixbutton {
+    font-size: 12px;
+}
+
+.appTable .webix_cell {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+
+.appTable .webix_dd_drag_column, .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header {
+    background: white none repeat scroll 0 0;
+    color: #686868;
+    font-size: 13px;
+}
+
+.appTable .webix_ss_header td {
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.appTable .webix_dtable .webix_ss_vscroll_header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_vscroll_header {
+    border-left: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_body {
+    cursor: pointer;
+}
+
+.webix_view.webix_layout_accordion {
+    background-color: white;
+}
+
+.webix_column > div.webix_cell_select, .webix_column > div.webix_column_select, .webix_column > div.webix_row_select {
+    background: #f5f5f5 none repeat scroll 0 0;
+    color: #686868;
+}
+
+.webix_accordionitem_header {
+    font-size: 14px;
+}
+
+.webix_accordionitem_header {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-color: #ddd;
+    color: #333;
+}
+
+.webix_accordionitem .webix_accordionitem_header .webix_accordionitem_button {
+    color: #333;
+}
+
+.webix_inp_label, .webix_inp_top_label, .webix_label_right {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_el_label {
+    font-size: 14px;
+}
+
+.foldersTree .webix_tree_branch_1 {
+    cursor: pointer;
+}
+
+.appsTableHover {
+    background-color: #ebebeb;
+}
+
+.uploaderDataTableHover, .uploaderDataTable, .uploaderDataTable .webix_cell {
+    cursor: default !important;
+}
+
+.dPayGroupVal input, .openFileBtn, .removeFileBtn {
+    cursor: pointer;
+}
+
+.clearRedBtn button {
+    background-color: #FFA54E;
+}
+
+.webix_view input, .webix_el_richselect input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.webix_el_colorpicker .webix_inp_static, .webix_el_colorpicker input, .webix_el_combo .webix_inp_static, .webix_el_combo input, .webix_el_datepicker .webix_inp_static, .webix_el_datepicker input, .webix_el_richselect .webix_inp_static, .webix_el_richselect input, .webix_el_sea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.webix_el_radio .webix_label_right {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.webix_layout_toolbar.webix_toolbar {
+    background: #fafafa none repeat scroll 0 0;
+    color: #fff;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_inp_counter_next, .webix_layout_toolbar.webix_toolbar .webix_inp_counter_prev, .webix_layout_toolbar.webix_toolbar .webix_segment_0, .webix_layout_toolbar.webix_toolbar .webix_segment_1, .webix_layout_toolbar.webix_toolbar .webix_segment_N, .webix_layout_toolbar.webix_toolbar .webixtype_base, .webix_layout_toolbar.webix_toolbar .webixtype_next, .webix_layout_toolbar.webix_toolbar .webixtype_prev {
+    border-color: #d9d9d9;
+    color: #444;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_inp_counter_next:hover, .webix_layout_toolbar.webix_toolbar .webix_inp_counter_prev:hover, .webix_layout_toolbar.webix_toolbar .webix_segment_0:hover, .webix_layout_toolbar.webix_toolbar .webix_segment_1:hover, .webix_layout_toolbar.webix_toolbar .webix_segment_N:hover, .webix_layout_toolbar.webix_toolbar .webixtype_base:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_inp_counter_next:focus, .webix_layout_toolbar.webix_toolbar .webix_inp_counter_prev:focus, .webix_layout_toolbar.webix_toolbar .webix_segment_0:focus, .webix_layout_toolbar.webix_toolbar .webix_segment_1:focus, .webix_layout_toolbar.webix_toolbar .webix_segment_N:focus, .webix_layout_toolbar.webix_toolbar .webixtype_base:focus {
+    background-color: transparent;
+    color: #444;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_input_icon:focus .webix_layout_toolbar.webix_toolbar .webix_input_icon:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+}
+
+.nodatafound {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.webix_header .webix_template {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    color: #444;
+    font-size: 1em;
+    font-family: Calibri;
+}
+
+.closeWinBtn button:hover {
+    background-color: transparent;
+}
+
+.closeWinBtn button:focus {
+    background-color: transparent;
+}
+
+.closeWinBtn button:active {
+    background-color: transparent;
+}
+
+.closeWinBtn button:pressed {
+    background-color: transparent;
+}
+
+.webix_cell {
+    cursor: pointer;
+}
+
+.webix_sidebar .webix_tree_item.webix_selected, .webix_sidebar .webix_tree_item.webix_selected span {
+    background-color: #e2e6e9;
+    color: #686868;
+}
+
+.uploadDocumentList {
+    color: #0079a1;
+}
+
+.combotree .webix_selected {
+    color: #666666;
+    font-weight: bold;
+    border-bottom: 1px solid #ffd47b;
+    box-shadow: 0 1px #ffe3a9 inset;
+    padding: 2px 10px;
+    background-color: #ffd47b;
+}
+
+.combotree {
+    cursor: pointer;
+}
+
+.webix_view > .webix_disabled {
+    background-color: #eee;
+}
+
+.webix_accordionitem.horizontal.collapsed .webix_accordionitem_header, .webix_accordionitem.collapsed .webix_accordionitem_header {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.webix_accordionitem.horizontal.collapsed .webix_accordionitem_header .webix_accordionitem_button, .webix_accordionitem.collapsed .webix_accordionitem_header .webix_accordionitem_button {
+    color: #333;
+}
+
+.webix_sidebar_selected {
+    background-color: transparent;
+}
+
+.webix_item_tab {
+
+}
+
+.maketResult {
+    background-color: Azure;
+    text-align: left;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+.center {
+    text-align: center;
+}
+
+.webix_hcell.center input[type=checkbox] {
+    width: 22px;
+    height: 22px;
+    margin-top: 12px;
+}
+
+.webix_table_checkbox {
+    width: 22px;
+    height: 22px;
+    margin-top: 5px;
+}
+
+.removeFileBtn {
+    float: right;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    -webkit-transition: prop 1s;
+    -moz-transition: prop 1s;
+    -ms-transition: prop 1s;
+    -o-transition: prop 1s;
+    transition: prop 1s;
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 2px;
+    padding: 0px 2px 1px 2px;
+}
+
+.uploaderDataTable {
+    border: none;
+}
+
+.uploaderDataTable .webix_cell {
+    border-top: none;
+}
+
+.myCounter .webix_inp_counter_value {
+    width: 80px;
+}
+
+/*.myCounter .webix_inp_counter_next, .myCounter .webix_inp_counter_prev{*/
+/*display: none;*/
+/*}*/
+
+.error {
+    background: red;
+}
+
+.success {
+    background: white;
+}
+
+.removeFileBtn:hover {
+    border-color: grey;
+}
+
+.noneLeftBorder, .noneLeftBorder .webix_cell {
+    border-left: none !important;
+}
+
+.noneRightBorder, .noneRightBorder .webix_cell {
+    border-right: none !important;
+
+}
+
+.trashBtn, .refreshBtn {
+    color: #777777;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.trashBtn:hover, .refreshBtn:hover {
+    color: navy;
+}
+
+.nonePadding, .nonePadding .webix_cell ,.appTable .webix_first .webix_hcell {
+    padding: 0px !important;
+}
+
+.profileTool .webix_layout_toolbar.webix_toolbar {
+    background-color: #3498db !important;
+}
+
+.webix_layout_toolbar.webix_toolbar .webixtype_base {
+    height: 34px;
+}
+
+.defButton.webix_el_button button {
+    height: 34px;
+}
+
+.defButton {
+    margin-top: 15px !important;
+}
+
+.myPadding {
+    margin-left: 32px !important;
+}
+
+.attachDocListContainer {
+    border: none !important;
+}
+
+.mainlayot .webix_item_tab, .showMaketWinBody .webix_item_tab {
+    background: white;
+    border-color: #ddd;
+}
+
+.mainlayot .webix_tab_filler {
+    border-bottom: 1px solid #ddd;
+}
+
+.mainlayot .webix_tab_filler:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.webix_item_tab {
+
+}
+
+.webix_view {
+    border: 0 solid #ddd;
+    /*  background: white;*/
+}
+
+.attachDocListContainer .webix_view {
+    background: white;
+}
+
+.webix_el_colorpicker input, .webix_el_combo input, .webix_el_datepicker input, .webix_el_search input, .webix_el_text input {
+    border: 1px solid #ddd;
+}
+
+.webix_layout_accordion, .webix_layout_clean, .webix_layout_line, .webix_multiview {
+    background: white;
+}
+
+.webix_accordionitem_header {
+    font-weight: 400;
+}
+
+.webix_disabled_opacity .webix_disabled {
+    background-color: transparent;
+}
+
+.affix {
+    top: 50px;
+    position: fixed;
+    z-index: 98;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.personinfo .webix_view {
+    background: none;
+}
+
+.boldLabel {
+    font-weight: bold;
+}
+
+.multiline {
+    position: relative;
+}
+
+.multiline div {
+    line-height: 20px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mainlayot .webix_spacer {
+    background: transparent;
+}
+
+.depTable {
+    font-size: 11px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    z-index: 100 !important;
+}
+
+.viewMaket:hover {
+    opacity: .6;
+}
+
+.buttonIcon .webix_icon {
+    font-size: 18px;
+    color: #2B7CAC;
+}
+
+.recDatepicker.webix_el_datepicker .webix_input_icon, .recDatepicker.webix_el_search .webix_input_icon {
+    display: none !important;
+}
+
+.mySelect {
+    width: 100%;
+    border: 1px solid gold;
+    height: 100%;
+    font-size: 11px;
+    color: #1e2022;
+}
+
+.noneIconCls .webix_input_icon {
+    display: none !important;
+}
+
+body {
+    background: url("../images/main_fone.png") !important;
+    background-repeat: repeat-x !important;
+    background-attachment: fixed !important;
+    background-position-y: 230px;
+}
+
+.breadcrumbs{
+    /* Сбрасываем обтекание текста */
+    margin-top: 7px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.breadcrumbs li{
+    float: left;
+    height: 30px;
+    margin: 0 .2em 0 1em;
+}
+.trashBtn {
+    color: #777777;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.breadcrumbs a{
+    background: #3ea9d9;
+    padding: .4em 1em;
+    float: left;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: Calibri;
+}
+
+.breadcrumbs a:hover{
+    background: #4d7dbf;
+}
+
+.breadcrumbs a:hover,.breadcrumbs a:focus{
+    text-decoration: none;
+    color: white;
+}
+
+.breadcrumbs a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-width: 1.5em 0 1.5em 1em;
+    border-style: solid;
+    border-color: #3ea9d9 #3ea9d9 #3ea9d9 transparent;
+    left: -1em;
+}
+
+.breadcrumbs a:hover::before{
+    border-color: #4d7dbf #4d7dbf #4d7dbf transparent;
+}
+
+.breadcrumbs a::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid #3ea9d9;
+    right: -1em;
+}
+
+.breadcrumbs a:hover::after{
+    border-left-color: #4d7dbf;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li.current a{
+    background: #4d7dbf;
+    cursor: default;
+}
+
+.breadcrumbs li.current a::before{
+    border-color: #4d7dbf #4d7dbf #4d7dbf transparent;
+}
+
+.breadcrumbs li.current a::after{
+    border-left: 1em solid #4d7dbf;
+}
+
+.webix_spacer_transparent {
+    background: transparent;
+}
+
+.appTableHover {
+    background-color: #ebebeb;
+    cursor: default;
+}
+
+.angleLeft, .angleRight {
+    font-weight: bold;
+}
+
+.angleLeft, .angleRight ,.editOrder,.viewOrder{
+    cursor: pointer;
+    color: navy;
+    font-size: 16px;padding: 10px
+}
+
+.appTable .webix_cell ,.appTable .webix_hcell {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+.appCntTable .webix_cell {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.appTable .webix_dd_drag_column,.appCntTable .webix_dd_drag_column, .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header {
+    background: white none repeat scroll 0 0;
+    color: #686868;
+    font-size: 13px;
+}
+
+.appTable .webix_ss_header td ,.appCntTable .webix_ss_header td {
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+.appTable .webix_dtable .webix_ss_vscroll_header,.appCntTable .webix_dtable .webix_ss_vscroll_header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_vscroll_header, .appCntTable .webix_ss_vscroll_header {
+    border-left: 1px solid #ebebeb;
+}
+
+.appTable .webix_ss_center_scroll,.appTable .webix_ss_center_scroll,.appCntTable,.appCntTable .webix_cell {
+    cursor: default!important;
+}
+
+.webix_layout_toolbar.webix_toolbar {
+    background-color: white!important;
+}
+
+.webix_layout_toolbar.webix_toolbar .webix_el_label {
+    color: #317eac!important;
+}
+
+.webix_layout_toolbar.webix_toolbar .buttonIconGreen .webix_icon_button .webix_icon {
+    padding: 5px;
+    font-size: 18px;
+    color: green;
+}
+
+.webix_layout_toolbar.webix_toolbar .buttonIcon .webix_icon_button .webix_icon {
+    padding: 5px;
+    font-size: 18px;
+    color: #2B7CAC;
+}
+
+.webix_layout_toolbar.webix_toolbar .buttonIconRed .webix_icon_button .webix_icon {
+    padding: 5px;
+    font-size: 18px;
+    color: red;
+}
+
+.emailattrs_mainlayout{
+    width:720px;
+    padding:10px;
+    margin:0 auto;
+}

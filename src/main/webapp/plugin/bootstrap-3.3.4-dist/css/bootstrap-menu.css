@@ -1,0 +1,21 @@
+.navbar {
+    border-radius: inherit;
+    color: white;
+}
+.navbar {
+    background-image: linear-gradient(#418cbe, #5497c4 60%, #418cbe);
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #6CA6CD;
+    border-top-color:  #6CA6CD;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #5497c4;    
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #5497c4;    
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+     background-color: #5497c4;
+}

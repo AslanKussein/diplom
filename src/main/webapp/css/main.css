@@ -1,0 +1,7 @@
+
+body {
+    background: url("../images/main_fone.png") !important;
+    background-repeat: repeat-x !important;
+    background-attachment: fixed !important;
+    background-position-y: 230px;
+}
